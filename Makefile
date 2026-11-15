@@ -13,7 +13,7 @@ campuscompute: $(OBJECTS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 test: campuscompute
-	./tests/regression.sh
+	sh ./tests/regression.sh
 
 clean:
 	rm -f $(OBJECTS) campuscompute campuscompute.log
